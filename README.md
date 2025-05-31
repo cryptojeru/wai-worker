@@ -43,6 +43,7 @@ Software:
  
 * **CLI (Rent Vast GPU):**
   * Alternatively, you can follow this [Rent and Setup GPU Guide](https://github.com/0xmoei/Rent-and-Config-GPU) if you want to rent `Vast` GPUs.
+  * I personally use both `QuickPod` and `Vast`, choosing based on my needs and the server's price.
 
 ---
 
