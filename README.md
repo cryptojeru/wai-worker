@@ -17,9 +17,11 @@ Signup your email in [Wai Dashboard](https://w.ai/r/MOEI)
 # Installation Method
 * **Desktop Users: (Linux, Windows, MacOS)**
   * Install GUI Application .e.g `.exe`,`.dmg`,`.deb`
+  * If you don't want to install applications on your system, I recommend go through `Windows CLI` version.
  
 * **CLI (Windows):**
   * Windows: Install `Ubuntu WSL` on your Windows using this [guide](https://github.com/0xmoei/Install-Linux-on-Windows)
+  * A good internet connection is needed.
 
 * **CLI (Rent QuickPod GPU):**
   * Signup on [QuickPod](https://console.quickpod.io?affiliate=f621de18-b6ac-4416-b87f-01f29f8339b5) using email and verify it.
@@ -57,8 +59,16 @@ npm install -g yarn
 yarn -v
 ```
 
+## Install Nvidia & 12.4 CUDA Toolkit
+* Verify Cuda version is `12.4` by running `nvidia-smi` & and `nvcc --version`
+* If non of
+* If you've rented a GPU, then there's no need to install since you initially can choose `Cuda 12.4` Templates, but if you are a local pc user or with custom sepecification, then follow this to make sure your system is compatible with `Cuda 12.4`
 
-## Install wai CLI
+
+
+
+
+## Install Wai CLI
 ```console
 curl -fsSL https://app.w.ai/install.sh | bash
 ```
