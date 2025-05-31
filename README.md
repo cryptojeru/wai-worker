@@ -112,6 +112,6 @@ nvidia-smi
 # Monitor Disk usage
 du -sh /root/.wombo
 
-# Monitor CPU and RAM (it's shared rented GPUs)
+# Monitor CPU and RAM (it's shared in rented GPUs)
 htop
 ```
