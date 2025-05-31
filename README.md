@@ -1,30 +1,40 @@
 # wai-worker
 
-# Hardware Requirements
+# Requirement
+Hardware:
 * Any M-Series (Apple Silicon) chip:
   * Macbook/Mac Mini M1, M2, M3, M4
 * NVIDIA GPUs: Compute capability of 5.0+
   * GTX 1050, RTX 2060, RTX 3070, RTX 4080, etc.
-
-# Environment
+  
+Software:
 * Recommended Nvidia [driver](https://www.nvidia.com/en-us/drivers/details/245674/) (Local PC)
 * CUDA Toolkit `12.4` (only supports this version)
 
-# Signup wai
+# Signup Wai Node Dashboard
 Signup your email in [Wai Dashboard](https://w.ai/r/MOEI)
 
 # Installation Method
-* Desktop Users: (Linux, Windows, MacOS)
+* **Desktop Users: (Linux, Windows, MacOS)**
   * Install GUI Application .e.g `.exe`,`.dmg`,`.deb`
  
-* CLI (Windows):
-  * Windows: Install Ubuntu WSL on your Windows using this [guide](https://github.com/0xmoei/Install-Linux-on-Windows)
+* **CLI (Windows):**
+  * Windows: Install `Ubuntu WSL` on your Windows using this [guide](https://github.com/0xmoei/Install-Linux-on-Windows)
 
-* CLI (Rent QuickPod GPU):
-  * Signup on [QuickPod](https://console.quickpod.io?affiliate=f621de18-b6ac-4416-b87f-01f29f8339b5).
-  * Choose `CUDA 12.4` template.
-  * Buy a cheap GPU (You find some for $0.05/hr)
-  * 
+* **CLI (Rent QuickPod GPU):**
+  * Signup on [QuickPod](https://console.quickpod.io?affiliate=f621de18-b6ac-4416-b87f-01f29f8339b5) using email and verify it.
+  * Fund your QuickPod with crypto by clicking on `+Add` on top-right.
+  * In `Template` section, Choose `CUDA 12.4`.
+  * Now in GPU selection, you can buy a cheap one for this node (You find some for $0.05/hr)
+  * But more more miners need more vRAM.
+  * Click on `Create POD` to rent GPU.
+  * Choose at least `100GB` Disk.
+  * Press `Connect` on your Pod.
+  * You can `Connect to Web Terminal` or just copy the `SSH Command` to connect through your own client like Windows Powershell, VScode, Termius, etc.
+  * In `QuickPod` method , you don't need to create `SSH-key` and all the steps are as above.
+ 
+* **CLI (Rent Vast GPU):**
+  * Alternatively, you can follow this [Rent and Setup GPU Guide](https://github.com/0xmoei/Rent-and-Config-GPU) if you want to rent `Vast` GPUs.
 
 # Method: CLI
 ## Install Dependecies
