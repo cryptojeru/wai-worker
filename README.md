@@ -224,7 +224,7 @@ du -sh /root/.wombo
 htop
 ```
 
-I'm curretly running 9 worker instances on this GPU:
+I'm curretly running 9 worker instances on this GPU ($0.05/hr):
 
 ![image](https://github.com/user-attachments/assets/72f8be34-3a8c-4246-9d19-6db5d36e428c)
 
