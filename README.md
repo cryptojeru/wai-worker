@@ -11,8 +11,12 @@ Software:
 * Recommended Nvidia [driver](https://www.nvidia.com/en-us/drivers/details/245674/) (Local PC)
 * CUDA Toolkit `12.4` (only supports this version)
 
+---
+
 # Signup Wai Node Dashboard
 Signup your email in [Wai Dashboard](https://w.ai/r/MOEI)
+
+---
 
 # Installation Method
 * **Desktop Users: (Linux, Windows, MacOS)**
@@ -38,8 +42,10 @@ Signup your email in [Wai Dashboard](https://w.ai/r/MOEI)
 * **CLI (Rent Vast GPU):**
   * Alternatively, you can follow this [Rent and Setup GPU Guide](https://github.com/0xmoei/Rent-and-Config-GPU) if you want to rent `Vast` GPUs.
 
+---
+
 # Method: CLI
-## Install Dependecies
+## Step 1. Install Dependecies
 ```console
 # Update System Packages
 apt update && apt upgrade -y
@@ -59,21 +65,59 @@ npm install -g yarn
 yarn -v
 ```
 
-## Install Nvidia & 12.4 CUDA Toolkit
-* Verify Cuda version is `12.4` by running `nvidia-smi` & and `nvcc --version`
-* If non of
-* If you've rented a GPU, then there's no need to install since you initially can choose `Cuda 12.4` Templates, but if you are a local pc user or with custom sepecification, then follow this to make sure your system is compatible with `Cuda 12.4`
+---
 
+## Step 2. Install Nvidia & 12.4 CUDA Toolkit
+* Verify Cuda version is `12.4` by running `nvidia-smi` and `nvcc --version`.
+* If you've rented a GPU, then there's no need to install this step since you initially could choose `Cuda 12.4` Templates.
+* Only if you are a local pc user or with custom sepecification, then follow this to make sure your system is compatible with `Cuda 12.4`.
+* This step is only for `Windows (WSL Users)` and NOT for native-Linux users.
 
+### Install the NVIDIA Driver
+* Download and Install the NVIDIA driver version `550.90.07` from [this link](https://www.nvidia.com/en-us/drivers/details/245674/).
+* Note: No need to install a new driver if you think your current NVIDIA driver is 5+ and compatible with `Cuda 12.4`.
 
+### Install CUDA 12.4:
+Follow if you don't have any version of Cuda Toolkits installed:
+* For Windows users 
+```
+wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin
+sudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600
+wget https://developer.download.nvidia.com/compute/cuda/12.4.0/local_installers/cuda-repo-wsl-ubuntu-12-4-local_12.4.0-1_amd64.deb
+sudo dpkg -i cuda-repo-wsl-ubuntu-12-4-local_12.4.0-1_amd64.deb
+sudo cp /var/cuda-repo-wsl-ubuntu-12-4-local/cuda-*-keyring.gpg /usr/share/keyrings/
+sudo apt-get update
+sudo apt-get -y install cuda-toolkit-12-4
+```
+```
+echo 'export PATH=/usr/local/cuda-12.4/bin:$PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc
+```
+* Check NVIDIA driver version: `nvidia-smi`
+   * Look for Driver Version: `550+` and CUDA Version: `12.4`.
+* Check the CUDA version with: `nvcc --version`
+  * Should show Cuda release `12.4`.
 
+### Upgrading or Downgrading to CUDA 12.4:
+Follow if you have a different CUDA version installed
+```console
+# Uninstall the existing CUDA version:
+sudo apt remove --purge cuda
+sudo apt autoremove
+```
+* Now, Follow Install CUDA `12.4` step above.
 
-## Install Wai CLI
+---
+
+## Step 3. Install Wai CLI
 ```console
 curl -fsSL https://app.w.ai/install.sh | bash
 ```
 
-## Run wai Worker
+---
+
+## Step 4. Run wai Worker
 ```console
 # Add API key
 export W_AI_API_KEY=your key here
@@ -84,8 +128,9 @@ wai run
 
 ![image](https://github.com/user-attachments/assets/467d9a24-961d-442c-a9db-105dd7eb4d6b)
 
+---
 
-## Run multiple workers
+Step 5. ## Run multiple workers
 After you ensure your worker's running good, you can try running `multiple` workers in the background to mine more coins.
 
 ### Install PM2
@@ -163,7 +208,6 @@ pm2 restart wai.config.js
 pm2 kill
 ```
 * If you made any modification to `wai.config.js` config, you need to run *Stop and Restart workers* commands above.
-
 
 ### Monitor Hardwares
 ```console
