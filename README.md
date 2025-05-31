@@ -138,6 +138,9 @@ pm2 stop wai.config.js
 # Restart workers
 pm2 delete wai-node
 pm2 restart wai.config.js
+
+# Kill & Wipe all the workers instances
+pm2 kill
 ```
 * If you made any modification to `wai.config.js` config, you need to run *Stop and Restart workers* commands above.
 
