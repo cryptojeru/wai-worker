@@ -14,7 +14,8 @@ Software:
 ---
 
 # Signup Wai Node Dashboard
-Signup your email in [Wai Dashboard](https://w.ai/r/MOEI)
+* 1- Signup your email in [Wai Dashboard](https://w.ai/r/MOEI)
+* 2- Create a new Key in `API Keys` section.
 
 ---
 
