@@ -21,7 +21,7 @@ Software:
 
 # Installation Method
 * **Desktop Users: (Linux, Windows, MacOS)**
-  * Install GUI Application .e.g `.exe`,`.dmg`,`.deb`
+  * Install GUI Application on your local PC from the `Download` section of the dashboard.
   * If you don't want to install applications on your system, I recommend go through `Windows CLI` version.
  
 * **CLI (Windows):**
