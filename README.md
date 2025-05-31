@@ -131,7 +131,7 @@ wai run
 
 ---
 
-Step 5. ## Run multiple workers
+## Step 5. Run multiple workers
 After you ensure your worker's running good, you can try running `multiple` workers in the background to mine more coins.
 
 ### Install PM2
