@@ -104,7 +104,7 @@ pm2 restart wai.config.js
 * If you made any modification to `wai.config.js` config, you need to run *Stop and Restart workers* commands above.
 
 
-### Monitor GPU
+### Monitor Hardwares
 ```console
 # Monitor GPU vRAM usage
 nvidia-smi
