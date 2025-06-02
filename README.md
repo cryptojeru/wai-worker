@@ -54,7 +54,7 @@ Software:
 apt update && apt upgrade -y
 
 # Install General Utilities and Tools
-apt install screen curl iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev  -y
+apt install nano screen curl iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev  -y
 
 # Install Python
 apt install python3 python3-pip python3-venv python3-dev -y
