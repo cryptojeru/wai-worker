@@ -15,7 +15,7 @@ Software:
 ---
 
 # Signup Wai Node Dashboard
-* 1- Signup your email in [Wai Dashboard](https://w.ai/r/MOEI)
+* 1- Signup your email in [Wai Dashboard](https://w.ai/r/QN7YQCB1)
 * 2- Create a new Key in `API Keys` section.
 
 ---
@@ -29,22 +29,8 @@ Software:
   * Windows: Install `Ubuntu WSL` on your Windows using this [guide](https://github.com/0xmoei/Install-Linux-on-Windows)
   * A good internet connection is needed.
 
-* **CLI (Rent QuickPod GPU):**
-  * Signup on [QuickPod](https://console.quickpod.io?affiliate=f621de18-b6ac-4416-b87f-01f29f8339b5) using email and verify it.
-  * Fund your QuickPod with crypto by clicking on `+Add` on top-right.
-  * In `Template` section, Choose `CUDA 12.4`.
-  * Now in GPU selection, you can buy a cheap one for this node (You find some for $0.05/hr)
-  * But more more miners need more vRAM.
-  * Click on `Create POD` to rent GPU.
-  * Choose at least `100GB` Disk.
-  * Press `Connect` on your Pod.
-  * You can `Connect to Web Terminal` or just copy the `SSH Command` to connect through your own client like Windows Powershell, VScode, Termius, etc.
-  * In `QuickPod` method , you don't need to create `SSH-key` and all the steps are as above.
- 
 * **CLI (Rent Vast GPU):**
-  * Alternatively, you can follow this [Rent and Setup GPU Guide](https://github.com/0xmoei/Rent-and-Config-GPU) if you want to rent `Vast` GPUs.
-  * I personally use both `QuickPod` and `Vast`, choosing based on my needs and the server's price.
-
+  * Use this ]link](https://cloud.vast.ai/?ref_id=279559) if you want to rent `Vast` GPUs.
 ---
 
 # Method: CLI
