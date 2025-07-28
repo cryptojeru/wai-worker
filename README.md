@@ -30,7 +30,7 @@ Software:
   * A good internet connection is needed.
 
 * **CLI (Rent Vast GPU):**
-  * Use this ]link](https://cloud.vast.ai/?ref_id=279559) if you want to rent `Vast` GPUs.
+  * Use this [link](https://cloud.vast.ai/?ref_id=279559) if you want to rent `Vast` GPUs.
 ---
 
 # Method: CLI
